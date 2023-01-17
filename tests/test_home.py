@@ -1,9 +1,9 @@
 import pytest
-from application import application
+import application as Application
 
 @pytest.fixture()
 def app():
-    app = application
+    app = Application.application
     return app
 
 @pytest.fixture()
